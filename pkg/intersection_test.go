@@ -45,6 +45,6 @@ func assertArrayEqual(got []int,want []int, t *testing.T){
 	sort.Ints(got)
 	sort.Ints(want)
 	if (!reflect.DeepEqual(got,want) ) {
-		t.Errorf("got %q want %q", got, want)
+		t.Errorf("got %v want %v", got, want)
 	}
 }
