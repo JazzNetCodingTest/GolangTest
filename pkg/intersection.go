@@ -1,6 +1,8 @@
 package main
 
-
+/*
+* using a hashmap to store the matched numbers and for easier lookup of intersections
+*/
 func intersection(x,y []int) (z []int) {
 	lookup := make(map[int]bool)
 	

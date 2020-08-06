@@ -4,6 +4,9 @@ import (
 	"math"
 )
 
+/*
+* Using loop to have more flexile implementation than manual addition for each level
+*/
 func sumOfdigits(digit int) int {
 	sum := digit
 	result:= 0

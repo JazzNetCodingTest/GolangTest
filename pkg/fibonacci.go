@@ -4,12 +4,15 @@ import (
     "math/big"
 )
 
-// func main() {
-//     fmt.Println("the Sum of First 100 even Fibonacci number is ::",getEvenFibonacciSum(100).String())
-// }
+func getEvenFibonacciSumForLength100() *big.Int{
+    return getEvenFibonacciSum(100)
+}
 
+/*
+* even fibonacci numbers can be obtained by F(n) = 4*f(n-1)+f(n-2), starting from seed 0,2
+* Using bigInt since the results will overflow the int
+*/
 func getEvenFibonacciSum(length int) *big.Int {
-    //even fibonacci numbers can be obtained by F(n) = 4*f(n-1)+f(n-2), starting from seed 0,2
     ef1 := big.NewInt(0)
     if length == 0 {
         return ef1

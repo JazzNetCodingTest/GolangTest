@@ -26,7 +26,7 @@ func TestFibonacciSumForTwenty(t *testing.T) {
 
 
 func TestFibonacciSumForHundred(t *testing.T) {
-	got := getEvenFibonacciSum(100)
+	got := getEvenFibonacciSumForLength100()
 	want,_ := big.NewInt(0).SetString("290905784918002003245752779317049533129517076702883498623284700",0)
 	assertBigIntEqual(got,want,t)
 }
