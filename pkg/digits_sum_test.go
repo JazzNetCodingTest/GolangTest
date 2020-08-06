@@ -4,7 +4,6 @@ import (
 	"testing"
 )
 
-
 func TestWith3(t *testing.T) {
 	got := sumOfdigits(3)
 	want := 3702
@@ -23,9 +22,8 @@ func TestWith9(t *testing.T) {
 	assertIntEqual(got, want, t)
 }
 
-
-func assertIntEqual(got int ,want int , t *testing.T){
-	if (got != want) {
+func assertIntEqual(got int, want int, t *testing.T) {
+	if got != want {
 		t.Errorf("got %v want %v", got, want)
 	}
 }
